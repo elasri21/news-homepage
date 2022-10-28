@@ -1,0 +1,318 @@
+:root {
+    --text-size: 15px;
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --ark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+/* box properties */
+.d-flex {
+    display: flex;
+}
+.d-block {
+    display: block;
+}
+.d-none {
+    display: none;
+}
+@media (max-width: 767px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    .show-mobile {
+        display: block !important;
+    }
+}
+.btw-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.just-btw {
+    justify-content: space-between;
+}
+.c-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-c {
+    align-items: center;
+}
+.align-end {
+    align-items: flex-end;
+}
+.just-c {
+    justify-content: center;
+}
+.just-end {
+    justify-content: flex-end;
+}
+.column {
+    flex-direction: column;
+}
+.d-grid {
+    display: grid;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.flex-1 {
+    flex: 1;
+}
+.gap-10 {
+    gap: 10px;
+}
+.gap-15 {
+    gap: 15px;
+}
+.gap-20 {
+    gap: 20px;
+}
+.gap-30 {
+    gap: 30px;
+}
+.gap-40 {
+    gap: 40px;
+}
+.gap-50 {
+    gap: 50px;
+}
+.gap-60 {
+    gap: 60px;
+}
+.w-fit {
+    width: fit-content;
+}
+.w-full {
+    width: 100%;
+}
+/* padding */
+.p-5 {
+    padding: 5px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15px;
+}
+.p-20 {
+    padding: 20px;
+}
+.p-30 {
+    padding: 30px;
+}
+.p-40 {
+    padding: 40px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-15 {
+    padding-top: 15px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pt-50 {
+    padding-top: 50px;
+}
+.pt-100 {
+    padding-top: 100px;
+}
+.pr-10 {
+    padding-right: 10px;
+}
+.pr-15 {
+    padding-right: 15px;
+}
+.pr-20 {
+    padding-right: 20px;
+}
+.pr-30 {
+    padding-right: 30px;
+}
+.pr-40 {
+    padding-right: 40px;
+}
+.pb-5 {
+    padding-bottom: 5px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-60 {
+    padding-bottom: 60px;
+}
+.pb-80 {
+    padding-bottom: 80px;
+}
+.pb-100 {
+    padding-bottom: 100px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+.pl-15 {
+    padding-left: 15px;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.pl-40 {
+    padding-left: 40px;
+}
+
+/* margin */
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mt-74 {
+    margin-top: 74px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+
+
+
+/* fonts */
+.text-size {
+    font-size: var(--text-size);
+}
+.fs-16 {
+    font-size: 16px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-800 {
+    font-weight: 800;
+}
+.upper {
+    text-transform: uppercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.letter-s2 {
+    letter-spacing: 2px;
+}
+
+/* colors */
+.grey-c {
+    color: var(--grayish-blue);
+}
+.white-c {
+    color: var(--Off-white);
+}
+.dark-c {
+    color: var(--very-dark-blue);
+}
+.red-c {
+    color: var(--Soft-red);
+}
+.orange-c {
+    color: var(--Soft-orange);
+}
+.link-c {
+    color: var(--ark-grayish-blue);
+}
+
+/* background color */
+.bg-red {
+    background-color: var(--Soft-red);
+}
+.bg-dark {
+    background-color: var(--very-dark-blue);
+}
+
+/* border */
+.border-g {
+    border-bottom: 1px solid var(--grayish-blue);
+}
+/* transition */
+.trans {
+    transition: .3s;
+}
+.pointer {
+    cursor: pointer;
+}

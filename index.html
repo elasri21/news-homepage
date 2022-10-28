@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>News Homepage Main</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/framework.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <header class="">
+    <div class="container btw-flex">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="">
+      </div>
+      <nav class="hide-mobile">
+        <div class="close-menu d-none">
+          <i class="fa-solid fa-times fs-30 dark-c pointer"></i>
+        </div>
+        <ul class="d-flex align-c gap-20">
+          <li>
+            <a href="" class="d-block text-size link-c fs-700">Home</a>
+          </li>
+          <li>
+            <a href="" class="d-block text-size link-c fs-700">New</a>
+          </li>
+          <li>
+            <a href="" class="d-block text-size link-c fs-700">Popular</a>
+          </li>
+          <li>
+            <a href="" class="d-block text-size link-c fs-700">Trending</a>
+          </li>
+          <li>
+            <a href="" class="d-block text-size link-c fs-700">Categories</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="open-menu d-none show-mobile">
+        <i class="fa-solid fa-bars fs-30 pointer dark-c"></i>
+      </div>
+    </div>
+  </header>
+  <div class="page">
+    <div class="container d-flex wrap gap-30">
+      <main>
+        <div class="image hide-mobile mb-30">
+          <img class="w-full" src=".//assets/images/image-web-3-desktop.jpg" alt="">
+        </div>
+        <div class="image d-none show-mobile mb-30">
+          <img class="w-full" src="./assets/images/image-web-3-mobile.jpg" alt="">
+        </div>
+        <div class="info d-flex gap-30">
+          <h1 class="fs-30 fw-800 dark-c">The Bright Future of Web 3.0?</h1>
+          <div>
+            <p class="text-size grey-c mb-30">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <a href="" class="d-block w-fit pl-30 pr-30 trans pt-15 pb-15 bg-red white-c upper letter-s2">Read more</a>
+          </div>
+        </div>
+      </main>
+      <aside class="bg-dark p-20">
+        <h2 class="fs-20 fw-700 orange-c capitalize mb-30">new</h2>
+        <h3 class="fs-16 white-c mb-10 capitalize">Hydrogen VS Electric Cars</h3>
+        <p class="text-size grey-c fw-400 pb-20 border-g mb-30">Will hydrogen-fueld cars ever catch up to EVs?</p>
+        <h3 class="fs-16 white-c mb-10 capitalize">Will hydrogen-fueled cars ever catch up to EVs?</h3>
+        <p class="text-size grey-c fw-400 pb-20 border-g mb-30">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
+        <h3 class="fs-16 white-c mb-10 capitalize">
+          Is VC Funding Drying Up?
+        </h3>
+        <p class="text-size grey-c fw-400">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+      </aside>
+      <div class="boxes w-full d-flex gap-30 wrap">
+        <div class="box d-flex align-c gap-20">
+          <div class="image">
+            <img class="w-full" src="./assets/images/image-retro-pcs.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="fs20 fw-700 grey-c mb-20">01</h4>
+            <h5 class="fs-16 dark-c capitalize mb-20 pointer trans">Reviving Retro PCs</h5>
+            <p class="text-size grey-c">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="box d-flex align-c gap-20">
+          <div class="image">
+            <img class="w-full" src="./assets/images/image-top-laptops.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="fs20 fw-700 grey-c mb-20">02</h4>
+            <h5 class="fs-16 dark-c capitalize mb-20 pointer trans">Top 10 Laptops of 2022</h5>
+            <p class="text-size grey-c">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="box d-flex align-c gap-20">
+          <div class="image">
+            <img class="w-full" src="./assets/images/image-gaming-growth.jpg" alt="">
+          </div>
+          <div>
+            <h4 class="fs20 fw-700 grey-c mb-20">03</h4>
+            <h5 class="fs-16 dark-c capitalize mb-20 pointer trans">The Growth of Gaming</h5>
+            <p class="text-size grey-c">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="attribution p-20">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/elasri21" target="_blank">elasri21</a>.
+  </footer>
+  <script>
+    const menu = document.querySelector(".open-menu");
+    const closeMenu = document.querySelector(".close-menu");
+    const nav = document.querySelector("nav");
+    menu.addEventListener("click", function() {
+      console.log("clicked")
+      this.classList.remove("show-mobile");
+      nav.style.display = "block";
+      nav.classList.remove("hide-mobile");
+    });
+    closeMenu.addEventListener("click", function() {
+      nav.classList.add("hide-mobile");
+      menu.classList.add("show-mobile");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+:root {
+    --text-size: 15px;
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --ark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+header nav ul a:hover {
+    color: var(--Soft-red);
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+@media (max-width: 767px) {
+    .container {
+        padding: 20px 20px !important;
+    }
+}
+.container {
+    padding: 20px 50px;
+}
+header {
+    position: relative;
+}
+@media (max-width: 767px) {
+    header nav {
+        background-color: white;
+        position: fixed;
+        padding: 30px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 30%;
+    }
+    header nav ul {
+        flex-direction: column;
+        background-color: white;
+        align-items: stretch !important;
+        width: 100%;
+        height: 100%;
+    }
+    header nav .close-menu {
+        display:  block !important;
+        text-align: right;
+    }
+}
+@media (min-width: 768px) {
+    .page .container main {
+        width: 60%;
+    }
+    .page .container aside {
+        width: calc(40% - 30px);
+    }
+    .page .container .boxes > div {
+        width: calc(33% - 20px);
+    }
+}
+@media (max-width: 767px) {
+    .container main .info {
+        flex-direction: column;
+    }
+}
+.container main .info a:hover {
+    background-color: var(--very-dark-blue);
+}
+.container .boxes h5:hover {
+    color: var(--Soft-red);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
